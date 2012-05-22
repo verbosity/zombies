@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+   	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile1.1.0.css" type="text/css" media="screen" title="no title" />
+	<script src="jquery-1.7.2.js"></script>
+	<script src="jquery.mobile-1.1.0.js"></script>
+
+	<link rel="stylesheet" href="default.css" type="text/css" media="screen" title="no title" />
+	
+	<script type="text/javascript" charset="utf-8" src="cordova-1.6.0.js"></script>
+
+	<script src="jquery-ui-1.8.19.custom.min.js"></script>
+	
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.ui.map.js"></script>
+	 <script type="text/javascript">
+        $(function() {
+                // Also works with: var yourStartLatLng = '55.8700,  4.2700';
+                var yourStartLatLng = new google.maps.LatLng(55.8585849, -4.24560500);
+    
+                $('#map_canvas').gmap({'center': yourStartLatLng});
+                $('#map_canvas').gmap('option', 'zoom', 13);
+
+               
+               
+               
+        });
+</script>
+	
+	
+    <title>MyZombieApocalypse</title>
+    </head>
+    <body>
+
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+	<div data-role="header">
+		<h1>My Zombie Apocalype</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<p><a href="#join" data-role="button">Join</a></p>	
+		<p><a href="#main"data-role="button"  data-transition="pop">Play</a></p>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>copyright Verb 2012</h4>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+
+<!-- Start of second page: #join -->
+<div data-role="page" id="join" data-theme="a">
+
+
+
+	<div data-role="content" data-theme="a">	
+		<p> Joining is optional , but allows you to play via multiple devices </p>
+		<p> note: include joining form here<p>
+		<p><a href="#one" data-role="button">Back</a></p>
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>copyright verb 2012</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<!-- Start of third page: #main menu -->
+<div data-role="page" id="main">
+	<div data-role="header">
+		<h1>Home</h1>
+		<a href="#map" data-role="button"  data-inline="true"  data-mini="true" data-transition="pop" data-theme="b">map</a>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<p>basic stuffies for game. this is the main menu</p>
+		<div data-role="controlgroup">
+		<a href="#inventory"data-role="button"  data-transition="pop">inventory</a>
+		<a href="#character"data-role="button"  data-transition="pop">equipment</a>
+		<a href="#story"data-role="button"  data-transition="pop">story</a>
+		<a href="#gang"data-role="button"  data-transition="pop">gang</a>
+		<a href="#settings"data-role="button"  data-transition="pop">settings</a>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true_or_false"></script>
+		</div>
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>copyright verb 2012</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+    
+    
+    <!-- Start of #play -->
+<div data-role="page" id="map">
+
+	<div data-role="header">
+		<h1>My Zombie Apocalype</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >
+	 <div id="map_canvas" style="width:290px;height:350px;">	</div>
+		<p><a href="#join" data-role="button">Join</a></p>	
+		<p><a href="#main"data-role="button"  data-transition="pop">Play</a></p>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>copyright Verb 2012</h4>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+   
+	
+	
+    </body>
+</html>

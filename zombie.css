@@ -1,0 +1,86 @@
+  body {
+    background:#222 none repeat scroll 0 0;
+    color:#666;
+    font-family:Helvetica;
+    font-size:72%;
+    line-height:1.5em;
+    margin:0;
+    border-top:1px solid #393939;
+  }
+  /* set stuff to not be visible */
+  div.welcome_first_holder {
+  	display:none;
+  }
+  div.welcome_holder{
+  	display:none;
+  }
+  
+  
+  /* welcome pages */
+  div.welcome_stats {
+  clear:both;
+  position:fixed;
+bottom:30px;
+left:5%;
+    border: 1px solid #555;
+  	background:#444;
+  	width:90%;
+  	float:center;
+  	height:60px;
+  	color:#9ab;
+  	font-size:1.1em;
+  	text-decoration:none;
+  	padding:2px 0;
+  	margin:0px 0px 0px 0px;
+  	text-align:center;	
+  }
+
+  /* Stage Buttons */
+  a.btn{
+  	border: 1px solid #555;
+  	-webkit-border-radius: 5px;
+  	border-radius: 5px;
+  	text-align:center;
+  	display:block;
+  	float:left;
+  	background:#444;
+  	width:80%;
+  	color:#9ab;
+  	font-size:1.1em;
+  	text-decoration:none;
+  	padding:1.2em 0;
+  	margin:3px 0px 3px 5px;
+  }
+  
+    a.btn_large{
+  	border: 1px solid #555;
+  	-webkit-border-radius: 5px;
+  	border-radius: 5px;
+  	text-align:center;
+  	display:block;
+  	float:left;
+  	background:#444;
+  	width:25%;
+  	color:#9ab;
+  	font-size:1.1em;
+  	text-decoration:none;
+  	padding:1.2em 0;
+  	margin:3px 0px 3px 5px;
+  }
+  
+      a.playbutton{
+  	border: 1px solid #555;
+  	-webkit-border-radius: 5px;
+  	border-radius: 5px;
+  	text-align:center;
+  	display:block;
+  	float:left;
+  	background:yellow;
+  	width:80%;
+  	color:#9ab;
+  	font-size:1.1em;
+  	text-decoration:none;
+  	padding:1.2em 0;
+  	margin:3px 0px 3px 5px;
+  }
+

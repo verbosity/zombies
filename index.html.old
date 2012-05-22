@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+   <link rel="stylesheet" href="zombie.css" type="text/css" media="screen" title="no title">
+   	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile1.1.0.css" />
+	<script src="jquery-1.7.2.min.js"></script>
+	<script src="jquery.mobile-1.1.0.min.js"></script>
+    <title>MyZombieApocalypse</title>
+    </head>
+    <body>
+    
+    <!-- initial welcome screen  -->
+    <div id="welcome_first_holder" class=" all welcome_first_holder">
+    
+    	<div id="welcome_first_title" class=" all welcome_first welcome_title ">
+   			 <h1> Welcome to My zombie Apocalypse </h1>
+   		</div>
+    	<div id="welcome_first_join" class=" all welcome_first join ">
+   			you don't need to join, but it allows to to play on multiple devices.
+   			<br />
+    		<a href="#" class="btn large" onclick="join();">join</a>
+    	</div>
+    	<div id="welcome_first_play" class=" all welcome_first play ">
+    		<a href="#" class="btn large" onclick="ToHome();">play</a>
+    	</div>
+    </div>
+    <!-- other stuff will eventually fit in here too  -->
+
+    
+    <!-- Welcome screen for existing users  -->
+     <div id="welcome_first_holder" class=" all welcome_holder">
+     
+        <div id="welcome_title" class=" all welcome welcome_title " display="none">
+   		 <h1> Welcome to My zombie Apocalypse </h1>
+    </div>
+    <div id="welcome_play" class=" all welcome play " display="none">
+   		
+    	 <a href="#" class="btn large" onclick="ToHome();">play</a>
+    </div>
+    <br/>
+    <div id="welcome_stats" class=" all welcome welcome_stats">
+     current status 
+     <br/>
+     food = 100  water = 10 loo roll= 5
+     <br/>
+     health = 100% status= vagabond
+    </div>
+    </div>
+    
+    <!-- not doing 'join stuff just now move along with play -->
+    
+    
+    
+    <!--- 'home' page -->
+    <div id="home" class="all home">
+    <h2>Home</h2>
+     <a href="#" class="playbutton" onclick="play();">play</a>
+     <br />
+     <a href="#" class="btn_large " onclick="inventory();">Inventory</a>
+     <a href="#" class="btn_large " onclick="status();">Status</a>
+     <a href="#" class="btn_large " onclick="story();">Story</a>
+     <a href="#" class="btn_large " onclick="crafting();">Crafting</a>
+     <a href="#" class="btn_large " onclick="gang();">Gang</a>
+     <a href="#" class="btn_large " onclick="maps();">maps</a>
+    </div>
+     
+     
+       
+       
+       
+       
+    </body>
+</html>
